@@ -1,4 +1,4 @@
 CSChartsView
 ============
 
-A simple line graph drawing framework
+A light weight line graph drawing framework
