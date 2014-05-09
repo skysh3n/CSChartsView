@@ -18,6 +18,7 @@ If you're using [CocoaPods](http://www.cocoapods.org), simply add `pod ‘CSChar
 
 If you need **additional support** or help **integrating** and/or **customizing** the controller for your project, feel free to get in touch ([344208651@qq.com](mailto:344208651@qq.com)). 
 
+## PreViewing
 ![Alt text](https://raw.githubusercontent.com/sk344208651/CSChartsView/master/Image/IMG_0470.PNG)
 ![Alt text](https://raw.githubusercontent.com/sk344208651/CSChartsView/master/Image/IMG_0473.PNG)
 ![Alt text](https://raw.githubusercontent.com/sk344208651/CSChartsView/master/Image/IMG_0478.PNG)
