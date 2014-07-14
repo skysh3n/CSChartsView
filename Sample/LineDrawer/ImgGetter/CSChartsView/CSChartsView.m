@@ -24,38 +24,49 @@
 
 @implementation CSChartsView
 
+- (void)setupChart {
+	charts = [[CSCharts alloc] init];
+	charts.frame = self.bounds;
+
+	backgroundLayer = [CSChartsBackgroundLayer layer];
+	backgroundLayer.charts = charts;
+	backgroundLayer.frame = CGRectInset(self.layer.bounds,0,0);
+	backgroundLayer.contentsScale = [[UIScreen mainScreen] scale];
+
+	mainLineLayer = [CSChartsMainLineLayer layer];
+	mainLineLayer.charts = charts;
+	mainLineLayer.frame = CGRectInset(self.layer.bounds,0,0);
+	mainLineLayer.contentsScale = [[UIScreen mainScreen] scale];
+
+	xAxisLayer = [CSChartsXAxisLayer layer];
+	xAxisLayer.charts = charts;
+	xAxisLayer.frame = CGRectInset(self.layer.bounds,0,0);
+	xAxisLayer.contentsScale = [[UIScreen mainScreen] scale];
+
+	[self.layer addSublayer:backgroundLayer];
+	[self.layer addSublayer:mainLineLayer];
+	[self.layer addSublayer:xAxisLayer];
+
+	//add gesture
+	tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesturePerformed)];
+	[self addGestureRecognizer:tapGestureRecognizer];
+	[self refreshCSChartsView];
+}
 
 #pragma mark - life cycle methods
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        charts = [[CSCharts alloc] init];
-        charts.frame = frame;
-        
-        backgroundLayer = [CSChartsBackgroundLayer layer];
-        backgroundLayer.charts = charts;
-        backgroundLayer.frame = CGRectInset(self.layer.bounds,0,0);
-		backgroundLayer.contentsScale = [[UIScreen mainScreen] scale];
-        
-        mainLineLayer = [CSChartsMainLineLayer layer];
-        mainLineLayer.charts = charts;
-        mainLineLayer.frame = CGRectInset(self.layer.bounds,0,0);
-		mainLineLayer.contentsScale = [[UIScreen mainScreen] scale];
-        
-        xAxisLayer = [CSChartsXAxisLayer layer];
-        xAxisLayer.charts = charts;
-        xAxisLayer.frame = CGRectInset(self.layer.bounds,0,0);
-		xAxisLayer.contentsScale = [[UIScreen mainScreen] scale];
-        
-        [self.layer addSublayer:backgroundLayer];
-        [self.layer addSublayer:mainLineLayer];
-        [self.layer addSublayer:xAxisLayer];
-		
-		//add gesture
-		tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesturePerformed)];
-		[self addGestureRecognizer:tapGestureRecognizer];
-		[self refreshCSChartsView];
+        [self setupChart];
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setupChart];
     }
     return self;
 }
