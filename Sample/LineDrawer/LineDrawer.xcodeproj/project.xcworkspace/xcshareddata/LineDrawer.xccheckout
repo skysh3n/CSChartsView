@@ -10,29 +10,29 @@
 	<string>LineDrawer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>220441B1-69E4-47D1-B43B-6D2BD26E9741</key>
+		<key>B0EFEF98809F096F17B59945AC4AA3F674CB63AF</key>
 		<string>https://github.com/sk344208651/CSChartsView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Sample/LineDrawer/LineDrawer.xcodeproj/project.xcworkspace</string>
+	<string>Sample/LineDrawer/LineDrawer.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>220441B1-69E4-47D1-B43B-6D2BD26E9741</key>
+		<key>B0EFEF98809F096F17B59945AC4AA3F674CB63AF</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/sk344208651/CSChartsView.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>220441B1-69E4-47D1-B43B-6D2BD26E9741</string>
+	<string>B0EFEF98809F096F17B59945AC4AA3F674CB63AF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>220441B1-69E4-47D1-B43B-6D2BD26E9741</string>
+			<string>B0EFEF98809F096F17B59945AC4AA3F674CB63AF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CSChartsView</string>
 		</dict>

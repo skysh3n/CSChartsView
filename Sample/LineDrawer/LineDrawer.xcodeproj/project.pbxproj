@@ -29,19 +29,7 @@
 		44F63E1818B2F59C0001398F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F63E1718B2F59C0001398F /* main.m */; };
 		44F63E1C18B2F59C0001398F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F63E1B18B2F59C0001398F /* AppDelegate.m */; };
 		44F63E2418B2F59C0001398F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F63E2318B2F59C0001398F /* Images.xcassets */; };
-		44F63E2C18B2F59C0001398F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F63E0B18B2F59C0001398F /* Foundation.framework */; };
-		44F63E2D18B2F59C0001398F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F63E0F18B2F59C0001398F /* UIKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		44F63E2E18B2F59C0001398F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 44F63E0018B2F59C0001398F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 44F63E0718B2F59C0001398F;
-			remoteInfo = ImgGetter;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		44309A9318C487BE00575E5D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -85,7 +73,6 @@
 		44F63E1A18B2F59C0001398F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44F63E1B18B2F59C0001398F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		44F63E2318B2F59C0001398F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		44F63E2918B2F59C0001398F /* LineDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,15 +83,6 @@
 				44F63E0E18B2F59C0001398F /* CoreGraphics.framework in Frameworks */,
 				44F63E1018B2F59C0001398F /* UIKit.framework in Frameworks */,
 				44F63E0C18B2F59C0001398F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		44F63E2618B2F59C0001398F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44F63E2D18B2F59C0001398F /* UIKit.framework in Frameworks */,
-				44F63E2C18B2F59C0001398F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				44F63E0818B2F59C0001398F /* LineDrawer.app */,
-				44F63E2918B2F59C0001398F /* LineDrawerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,24 +221,6 @@
 			productReference = 44F63E0818B2F59C0001398F /* LineDrawer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		44F63E2818B2F59C0001398F /* LineDrawerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44F63E3D18B2F59C0001398F /* Build configuration list for PBXNativeTarget "LineDrawerTests" */;
-			buildPhases = (
-				44F63E2518B2F59C0001398F /* Sources */,
-				44F63E2618B2F59C0001398F /* Frameworks */,
-				44F63E2718B2F59C0001398F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				44F63E2F18B2F59C0001398F /* PBXTargetDependency */,
-			);
-			name = LineDrawerTests;
-			productName = ImgGetterTests;
-			productReference = 44F63E2918B2F59C0001398F /* LineDrawerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,9 +242,6 @@
 							};
 						};
 					};
-					44F63E2818B2F59C0001398F = {
-						TestTargetID = 44F63E0718B2F59C0001398F;
-					};
 				};
 			};
 			buildConfigurationList = 44F63E0318B2F59C0001398F /* Build configuration list for PBXProject "LineDrawer" */;
@@ -302,7 +258,6 @@
 			projectRoot = "";
 			targets = (
 				44F63E0718B2F59C0001398F /* LineDrawer */,
-				44F63E2818B2F59C0001398F /* LineDrawerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,13 +269,6 @@
 			files = (
 				44F63E2418B2F59C0001398F /* Images.xcassets in Resources */,
 				44F63E1618B2F59C0001398F /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		44F63E2718B2F59C0001398F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,22 +299,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44F63E2518B2F59C0001398F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		44F63E2F18B2F59C0001398F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 44F63E0718B2F59C0001398F /* LineDrawer */;
-			targetProxy = 44F63E2E18B2F59C0001398F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		44F63E1418B2F59C0001398F /* InfoPlist.strings */ = {
@@ -490,46 +423,6 @@
 			};
 			name = Release;
 		};
-		44F63E3E18B2F59C0001398F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImgGetter.app/ImgGetter";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ImgGetter/ImgGetter-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ImgGetterTests/LineDrawerTests-Info.plist";
-				PRODUCT_NAME = LineDrawerTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		44F63E3F18B2F59C0001398F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImgGetter.app/ImgGetter";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ImgGetter/ImgGetter-Prefix.pch";
-				INFOPLIST_FILE = "ImgGetterTests/LineDrawerTests-Info.plist";
-				PRODUCT_NAME = LineDrawerTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,15 +440,6 @@
 			buildConfigurations = (
 				44F63E3B18B2F59C0001398F /* Debug */,
 				44F63E3C18B2F59C0001398F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		44F63E3D18B2F59C0001398F /* Build configuration list for PBXNativeTarget "LineDrawerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44F63E3E18B2F59C0001398F /* Debug */,
-				44F63E3F18B2F59C0001398F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

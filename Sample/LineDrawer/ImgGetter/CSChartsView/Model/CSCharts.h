@@ -21,7 +21,7 @@
 @interface CSCharts : NSObject{
 @public
     //auxiliary parameters
-    CGPoint points[12];
+    CGPoint points[100];
 }
 @property(nonatomic,strong) CSChartsXAxis *xAxis;
 @property(nonatomic,strong) CSChartsYAxis *yAxis;
